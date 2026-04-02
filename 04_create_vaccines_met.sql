@@ -5,8 +5,6 @@ FROM ##AntigensMet_2
 GROUP BY NHSNumber,VaccineName
 CREATE CLUSTERED INDEX [NHS_Idx] ON ##VaccinesMet ([NHSNumber] ASC)
 
--- select * from ##VaccinesMet
-
 --Start to aggregage all of the code together
 SELECT NHSNumber, Anti.VaccineName,Anti.VaccineGroup, MIN(MetFlag) AS MinMetFlag, 
 CASE 
