@@ -144,7 +144,7 @@ WHERE NHSNumber IN (
 													AND VaccineGroup = 'Primary'
 													AND MetFlag = 0))
 	AND AntigenName =  'Menb'
-	AND VaccineGroup = '12 Month' -- CHANGE
+	AND VaccineGroup = '12 Month'
 UPDATE ##AntigensMet_2
 	SET MetFlag = NULL
 UPDATE ##AntigensMet_2
